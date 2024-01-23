@@ -1,0 +1,77 @@
+.my-img {
+    background-repeat: no-repeat;
+    display: block;
+    object-fit: cover;
+}
+
+.gradient-bg-blackandwhite {
+    background: linear-gradient(300deg, #fffd81, #61c9b2, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem
+}
+
+.dark-bg {
+  background: linear-gradient(300deg, #6b6b6b, #202020, #000000);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.background-gray {
+  background-color: rgba(187, 187, 187, 0.438);
+}
+
+
+@media (width < 1000px) {
+  .p-background {
+    background: linear-gradient(300deg, #dcffc8, #e6ffe8, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+    
+  
+}
