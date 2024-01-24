@@ -24,25 +24,25 @@
               <a  class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services
+              <a  class="nav-link dropdown-toggle" href="#Projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
               </a>
               <ul class="dropdown-menu gradient-bg-blackandwhite">
-                <li><a class="dropdown-item" href="#">Top Pirority</a></li>
-                <li><a class="dropdown-item" href="#">Emergency Service</a></li>
+                <li><a class="dropdown-item" href="#html">HTML Projects</a></li>
+                <li><a class="dropdown-item" href="#htmlcss">HTML+CSS Projects</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Special Services</a></li>
+                <li><a class="dropdown-item" href="#">Full Stack Projects</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Recent </a>
+              <a href="#Recent" class="nav-link" aria-disabled="true">Recent </a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Postcode" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Check</button>
           </form>
         </div>
@@ -51,6 +51,7 @@
   </section>
   </header>
     <!-- section hero -->
+  <main>
     <section class="gradient-bg-blackandwhite my-img" style="background-image: url(./images/19362653.jpg); background-size: cover;">
     <div class="container col-xxl-8 px-4 pt-5 "  >
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5" style="background-color: #ffffff85;">
@@ -61,7 +62,7 @@
             <h1 class="display-5 fw-bold  lh-1 mb-3" > <hi style="color: rgb(255, 255, 255); background-color: rgb(13, 0, 190);">Hi there,</hi> welcome to my <hi style="color: rgb(0, 0, 0);">portfolio website</hi></h1>
             <p class="lead" style="color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.692);">👋 Hello, I am <hi style="color: rgb(3, 0, 156); font-weight: 400;">Jahir Khan,</hi> a passionate Web Developer based in India, West Bengal. With a background in <hi style="color: rgb(3, 0, 156); font-weight: 400;">Front End Development</hi>, I speciliezed in creative dynamic and responsive website. My mission is to transform ideas into seamless digital experiences. Explore my portfolio to discover how I bring creativity and expertise together to build intuitive and visually appealing web solution. Let's collaborate and turn ideas into reality! </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Me</button>
+             <a href="#contact"> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="z-index: 1;">Contact Me</button></a>
             </div>
           </div>
         </div>
@@ -120,48 +121,29 @@
 
 
 <!-- section for example work  -->
-<section class="container background-gray">
-  <div id="myCarousel" class="carousel slide mb-6 py-5" data-bs-ride="carousel" >
+<section class="container " id="Recent">
+  <h2 class="section-heading text-dark display-1; ">Recent Projects</h2>
+  <div id="myCarousel" class="carousel slide mb-6 py-5 background-gray" data-bs-ride="carousel" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner" >
       <div class="carousel-item">
         <img src="./images/tindog website.png" alt="tindog website" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-        <div class="container">
-          <div class="carousel-caption text-start" style="color: rgb(0, 0, 0); background-color:rgba(255, 255, 255, 0.452)">
-            <h3>My Tindog Website</h3>
-            <p class="opacity-75" >First Website I made using Bootstrap as a project</p>
-            <p><a class="btn btn-outline-dark" href="https://jahir01khan.github.io/TinDogInMyStyle/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-            </svg> Go To The Website</a></p>
-          </div>
-        </div>
+        
       </div>
       <div class="carousel-item">
         <img src="./images/my first capstone project.png" alt="my first capstone project" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
         <div class="container">
-          <div class="carousel-caption" style="color: black; background-color:rgba(255, 239, 149, 0.452) ;">
-            <h3>My First Capstone Website</h3>
-            <p >After finishing my HTML I made this capstone website as a project work</p>
-            <p><a class="btn btn-lg btn-outline-primary" href="https://jahir01khan.github.io/html-portfolio/"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-            </svg>  Go To The Website</a></p>
-          </div>
+          
         </div>
       </div>
-      <div class="carousel-item active">
+      <div class="carousel-item active"> 
         <img src="./images/news website.png" alt="news website"class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
         <div class="container">
-          <div class="carousel-caption text-end" style="color: rgb(0, 43, 78); background-color:rgba(255, 255, 255, 0.452) ;">
-            <h1>News Website</h1>
-            <p >In CSS learning process, every time I learned something new I would apply it as an example and made this website</p>
-            <p><a class="btn btn-lg btn-dark" href="https://jahir01khan.github.io/News-Website/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-            </svg> Go To The Website</a></p>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -176,29 +158,164 @@
   </div>
 </section>
 
+<!-- new  -->
+<section class="pt-5 mt-5">
+  
+  <div class="container marketing">
+   <h2 class="section-heading text-dark ;">Projects</h2>
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="htmlcss">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">News Website <span class="text-body-secondary">.With help of AI</span></h2>
+        <p class="lead">In my journey of learning CSS, each new concept became a building block for me. Every time I grasped something fresh, I immediately put it into action by incorporating it into this website. It's like a real-time showcase of my CSS learning process, with the site evolving as I learned and applied new styling techniques. This hands-on approach not only solidified my understanding but also resulted in a tangible representation of my progress in the fascinating world of web design.</p> 
+        <p><a class="btn btn-primary" href="https://jahir01khan.github.io/News-Website/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg> Project Link</a></p>
+      </div>
+      
+      <div class="col-md-5">
+        <img src="./images/news website.png" alt="news website"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect> 
+        
+       <title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">TinDog Website <span class="text-body-secondary"> great site to find a mate for your dog!</span>
+        </span></h2>
+        <p class="lead">My first-ever website using Bootstrap! It's like the starting point of my web development adventure. Bootstrap, a cool tool, helped me make it look good on all devices. This site captures my early attempts at coding and designing web pages. Exciting times ahead as I continue to explore the world of creating awesome things online</p>
+        <p><a class="btn btn-primary" href="https://jahir01khan.github.io/TinDogInMyStyle/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg> Project Link</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./images/tindog website.png" alt="tindog project website" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="html">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First Capstone Website<span class="text-body-secondary"> : Shows my initial journey</span></h2>
+        <p class="lead">My debut capstone project after conquering HTML! This project represents the first big milestone in my coding journey. Using the skills I learned in HTML, I'm diving into a capstone challenge. It's like leveling up in the coding game, and I'm excited to showcase what I've learned in a more comprehensive project. Here's to the beginning of more advanced coding adventures!</p>
+        <p><a class="btn btn-primary" href="https://jahir01khan.github.io/capstone-project/"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg> Project Link</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="./images/my first capstone project.png" alt="My first capstone project" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div>
+</section>
+</main>
 
 <!-- section for about me  -->
-<section id="about" class="bg-light py-5">
+<footer>
+<section id="About" class="bg-light py-5">
 <div class="carousel-item active">
-  <div class="img-fluid container" width="100%" height="100%" style="background-image:  url(./images/My\ background\ image.jpg); background-size: cover;">
+  <div class="ps-5" width="100%" height="100%">
       <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-              <h2 class="section-heading text-dark; ">About Me</h2>
-              <p class="p-background mb-4" style="color: rgb(0, 0, 0);">Hey, I'm Jahir Khan. Passionate about web development and a firm believer in positive vibes. When I'm not coding, I find solace in exploring spirituality. My 'About Me' section is a glimpse into my world of coding and personal reflection. Join me on this journey of tech and self-discovery. Let's build something amazing together!
-                Web development is my jam, but you'll often catch me nose-deep in religious texts and Korean Manhwa - love those captivating worlds.
-
-Apart from coding, I'm a cozy space enthusiast. Decorating my house is my creative zen. Oh, and daily prayers? Yup, I'm all about that, five times a day.
-
-Languages? Yep, love 'em. Always diving into new ones, exploring cultures. And guess what? Real-life introvert here, but throw me into a debate on WhatsApp, and you might see an extroverted side pop up.
-
-Join me on this journey of code, books, creativity, and self-discovery. Let's build and learn together!"
-              </p>
+        
+        <div class="col-12 col-lg-1 flex-lg-column d-flex flex-column   mx-auto" style="order: 2;">
+                <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="collapse" data-bs-placement="left" data-bs-original-title="Icon-only">
+                    <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                    <span class="visually-hidden">Icon-only</span>
+                </a>
+                
+                <ul class="nav nav-pills nav-flush flex-row mb-auto text-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link py-3 border-end border-bottom rounded-0" aria-current="page" data-bs-toggle="collapse" data-bs-placement="left" aria-label="Home" data-bs-original-title="Home">  
+                          <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3 border-end border-bottom rounded-0" data-bs-toggle="collapse" data-bs-placement="left" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link py-3 border-end border-bottom rounded-0" data-bs-toggle="collapse" data-bs-placement="left" aria-label="Orders" data-bs-original-title="Orders">
+                         <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link py-3 border-bottom border-end rounded-0" data-bs-toggle="collapse" data-bs-placement="left" aria-label="Products" data-bs-original-title="Products">
+                        
+                        <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg>
+                      
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link py-3 border-bottom border-end rounded-0" data-bs-toggle="collapse" data-bs-placement="left" aria-label="Customers" data-bs-original-title="Customers">
+                        <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                      </a>
+                    </li>
+                     
+                    <li>
+                      <a href="#" class="nav-link py-3 border-bottom border-end rounded-0" data-bs-toggle="collapse" data-bs-placement="left" aria-label="Customers" data-bs-original-title="Customers">
+                         <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                      </a>
+                    </li> 
+                </ul>
+            
+                <div class="dropdown">
+                    <a href="#" class="d-flex  p-3 link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/IMG_20230422_083654497.jpg" alt="mdo" width="24" height="24" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Chat </a></li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <div class="col-9 text-start">
+              <div class="col">
+                  <h2 class="section-heading text-dark; " id="About">About Me</h2>
+                  <p class=" mb-4" style="color: rgb(0, 0, 0);">Hey, I'm Jahir Khan. Passionate about web development and a firm believer in positive vibes. When I'm not coding, I find solace in exploring spirituality. My 'About Me' section is a glimpse into my world of coding and personal reflection. Join me on this journey of tech and self-discovery. Let's build something amazing together!
+                    Web development is my jam, but you'll often catch me nose-deep in religious texts and Korean Manhwa - love those captivating worlds.
+    
+                  Apart from coding, I'm a cozy space enthusiast. Decorating my house is my creative zen. Oh, and daily prayers? Yup, I'm all about that, five times a day.
+    
+                  Languages? Yep, love 'em. Always diving into new ones, exploring cultures. And guess what? Real-life introvert here, but throw me into a debate on WhatsApp, and you might see an extroverted side pop up.
+    
+                  Join me on this journey of code, books, creativity, and self-discovery. Let's build and learn together!"
+                  </p>
+              </div>
+              <div class="mt-5" id="contact">
+                <h2>Contact Me on</h2>
+                <p>Gmail: <a href="mailto:jahir2003khan@gmail.com">jahir2003khan@gmail.com</a></p>
+                <p>Phone and WhatsApp Number: <a href="tel:+919874495221">+91 9874495221</a></p>
+                <p>Fiveer: <a href="https://www.instagram.com/jahir2003khan/" target="_blank">jahirwebkhan</a></p>
+            </div>
+            
+                 
+            
+           
+            
+           
 
           </div>
+           
       </div>
   </div>
 </div>
 </section>
+</footer>
 
 
 
